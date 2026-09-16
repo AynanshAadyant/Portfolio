@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-bff",
+  "version": "1.0.0",
+  "description": "Lightweight CMS + BFF for any portfolio site. Manages content, projects, and syncs LeetCode/Spotify data.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "nodemon": "nodemon src/server.js",
+    "test": "node src/tests/smoke.js && node src/tests/httpTest.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^6.9.0",
+    "mongoose": "^9.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
