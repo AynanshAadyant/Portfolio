@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLeetCode } from '../hooks/useLeetCode';
-import { useSpotify } from '../hooks/useSpotify';
+// import { useSpotify } from '../hooks/useSpotify';
 import { LeetCodeTile } from '../components/dashboard/LeetCodeTile';
 // import { SpotifyTile } from '../components/dashboard/SpotifyTile';
 import { BentoTile } from '../components/dashboard/BentoTile';
