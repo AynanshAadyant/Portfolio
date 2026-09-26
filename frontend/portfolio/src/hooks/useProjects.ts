@@ -18,7 +18,8 @@ export function useProjects() {
       }
     },
     initialData: FALLBACK_PROJECTS,
-    staleTime: 1000 * 60 * 10,
+    initialDataUpdatedAt: 0,
+    staleTime: 1000 * 60 * 5,
   });
 }
 
@@ -37,6 +38,7 @@ export function useProject(slug: string) {
       }
     },
     initialData: FALLBACK_PROJECTS.find((p) => p.slug === slug),
-    staleTime: 1000 * 60 * 10,
+    initialDataUpdatedAt: 0,
+    staleTime: 1000 * 60 * 5,
   });
 }

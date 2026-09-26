@@ -24,6 +24,7 @@ export function useSpotify() {
       }
     },
     initialData: FALLBACK_SPOTIFY_DATA,
+    initialDataUpdatedAt: 0,
     refetchInterval: () => (typeof document !== 'undefined' && document.hidden ? false : 30000),
   });
 }

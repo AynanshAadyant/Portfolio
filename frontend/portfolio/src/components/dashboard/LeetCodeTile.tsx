@@ -24,7 +24,7 @@ export const LeetCodeTile: React.FC<LeetCodeTileProps> = ({ stats }) => {
         </div>
       }
       subtitle={`Contest Rating: ${stats.contestRating} • MAIT Computer Science`}
-      className="col-span-1 md:col-span-2"
+      className="col-span-1 md:col-span-2 w-full"
     >
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
         {/* Total Solved Hero Stat */}

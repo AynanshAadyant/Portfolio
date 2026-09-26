@@ -20,7 +20,8 @@ export function useContent(key: string) {
       }
     },
     initialData: FALLBACK_CONTENT_BLOCKS[key] ?? '',
-    staleTime: 1000 * 60 * 10,
+    initialDataUpdatedAt: 0,
+    staleTime: 1000 * 60 * 5,
   });
 }
 
@@ -39,6 +40,7 @@ export function useAllContent() {
       }
     },
     initialData: FALLBACK_CONTENT_BLOCKS,
-    staleTime: 1000 * 60 * 10,
+    initialDataUpdatedAt: 0,
+    staleTime: 1000 * 60 * 5,
   });
 }

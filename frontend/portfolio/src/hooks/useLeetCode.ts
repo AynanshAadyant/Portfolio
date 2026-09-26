@@ -18,6 +18,7 @@ export function useLeetCode() {
       }
     },
     initialData: FALLBACK_LEETCODE_STATS,
-    staleTime: 1000 * 60 * 10,
+    initialDataUpdatedAt: 0,
+    staleTime: 1000 * 60 * 5,
   });
 }

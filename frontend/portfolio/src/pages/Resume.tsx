@@ -16,14 +16,14 @@ export const Resume: React.FC = () => {
             Aynansh Aadyant
           </h1>
           <p className="text-sm font-mono text-emerald-400">
-            Software Engineer • Distributed Systems & Cloud Architectures
+            Software Engineer
           </p>
           <p className="text-xs font-mono text-muted-foreground mt-1">
             New Delhi, India • Open to 2026/2027 Engineering Opportunities
           </p>
         </div>
 
-        <a href="/resume.pdf" target="_blank" rel="noreferrer" download>
+        <a href="../resume/resume_14_09_fullstack.pdf" target="_blank" rel="noreferrer" download>
           <Button className="gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C] font-semibold">
             <Download className="size-4" />
             Download Resume (PDF)

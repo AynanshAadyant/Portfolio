@@ -34,7 +34,7 @@ export const Dashboard: React.FC = () => {
         {/* {spotifyData && <SpotifyTile spotify={spotifyData} />} */}
 
         {/* System & Architecture Telemetry */}
-        <BentoTile
+        {/* <BentoTile
           title="Infrastructure Telemetry"
           icon={<Server className="size-4 text-cyan-400" />}
           badge={
@@ -60,8 +60,8 @@ export const Dashboard: React.FC = () => {
             </div>
           </div>
         </BentoTile>
-
-        {/* GitHub & Microservices Strip */}
+ */}
+        {/* GitHub & Microservices Strip
         <BentoTile
           title="Recent Git Activity"
           icon={<GitCommit className="size-4 text-amber-400" />}
@@ -94,7 +94,7 @@ export const Dashboard: React.FC = () => {
         </BentoTile>
 
         {/* Research & Background Info */}
-        <BentoTile
+        {/* <BentoTile
           title="Research Affiliations"
           icon={<ShieldCheck className="size-4 text-purple-400" />}
           badge={
@@ -117,7 +117,7 @@ export const Dashboard: React.FC = () => {
               <span className="text-[#FAFAFA]">2023 – 2027</span>
             </div>
           </div>
-        </BentoTile>
+        </BentoTile> */}
       </div>
     </div>
   );

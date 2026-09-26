@@ -8,6 +8,7 @@ export class LeetCodeController {
   static async getStats(req, res, next) {
     try {
       const data = await LeetCodeService.getCachedStats();
+      console.log( `\n\n${data} `)
       return res.status(200).json(data);
     } catch (err) {
       next(err);
