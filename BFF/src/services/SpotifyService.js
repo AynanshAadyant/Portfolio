@@ -15,11 +15,6 @@ export class SpotifyService {
    * @returns {Promise<string|null>}
    */
   static async getAccessToken() {
-    // If a direct token was also provided, allow fallback
-    if (ENV.SPOTIFY_TOKEN) {
-      return ENV.SPOTIFY_TOKEN;
-    }
-
     if (!ENV.SPOTIFY_CLIENT_ID || !ENV.SPOTIFY_CLIENT_SECRET || !ENV.SPOTIFY_REFRESH_TOKEN) {
       return null;
     }
@@ -98,11 +93,7 @@ export class SpotifyService {
     }
 
     // Check if credentials exist
-    const hasCredentials =
-      Boolean(ENV.SPOTIFY_TOKEN) ||
-      Boolean(ENV.SPOTIFY_CLIENT_ID && ENV.SPOTIFY_CLIENT_SECRET && ENV.SPOTIFY_REFRESH_TOKEN);
-
-    if (!hasCredentials) {
+    if (!ENV.SPOTIFY_CLIENT_ID || !ENV.SPOTIFY_REFRESH_TOKEN) {
       await cacheManager.set(SpotifyService.CACHE_KEY_NOW_PLAYING, SEED_SPOTIFY_DATA, ENV.TTL.SPOTIFY_NOW_PLAYING);
       return SEED_SPOTIFY_DATA;
     }

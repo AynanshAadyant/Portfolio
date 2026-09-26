@@ -106,7 +106,7 @@ export class AdminService {
         rssMb: Math.round(memory.rss / 1024 / 1024),
       },
       integrations: {
-        spotifyConfigured: Boolean(ENV.SPOTIFY_TOKEN || (ENV.SPOTIFY_CLIENT_ID && ENV.SPOTIFY_REFRESH_TOKEN)),
+        spotifyConfigured: Boolean(ENV.SPOTIFY_CLIENT_ID && ENV.SPOTIFY_REFRESH_TOKEN),
         leetcodeConfigured: Boolean(ENV.LEETCODE_USERNAME),
       },
     };
