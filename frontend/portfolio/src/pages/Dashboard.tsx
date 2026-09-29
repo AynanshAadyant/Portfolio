@@ -3,8 +3,9 @@ import { useLeetCode } from '../hooks/useLeetCode';
 // import { useSpotify } from '../hooks/useSpotify';
 import { LeetCodeTile } from '../components/dashboard/LeetCodeTile';
 // import { SpotifyTile } from '../components/dashboard/SpotifyTile';
-import { BentoTile } from '../components/dashboard/BentoTile';
-import { Activity, GitCommit, Server, ShieldCheck, Cpu } from 'lucide-react';
+// import { BentoTile } from '../components/dashboard/BentoTile';
+// import { Activity, GitCommit, Server, ShieldCheck, Cpu } from 'lucide-react';
+import { Activity } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
   const { data: leetCodeStats } = useLeetCode();
