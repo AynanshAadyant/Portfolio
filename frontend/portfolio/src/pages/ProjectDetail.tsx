@@ -61,12 +61,12 @@ export const ProjectDetail: React.FC = () => {
         </p>
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           {project.github_url && (
-            <a href={project.github_url} target="_blank" rel="noreferrer">
+            <a href={project.github_url} target="_blank" rel="noreferrer" className="w-full sm:w-auto">
               <Button
                 variant="outline"
-                className="gap-2 border-white/10 bg-[#121216] text-[#FAFAFA] hover:bg-white/5"
+                className="w-full sm:w-auto gap-2 border-white/10 bg-[#121216] text-[#FAFAFA] hover:bg-white/5"
               >
                 <GithubIcon className="size-4" />
                 View Repository
@@ -74,8 +74,8 @@ export const ProjectDetail: React.FC = () => {
             </a>
           )}
           {project.live_url && (
-            <a href={project.live_url} target="_blank" rel="noreferrer">
-              <Button className="gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C]">
+            <a href={project.live_url} target="_blank" rel="noreferrer" className="w-full sm:w-auto">
+              <Button className="w-full sm:w-auto gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C]">
                 <ExternalLink className="size-4" />
                 Live Deployment
               </Button>

@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon } from '../ui/icons';
 export const Footer: React.FC = () => {
   return (
     <footer className="w-full border-t border-white/10 bg-[#0A0A0C] mt-24 py-10">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2 text-xs font-mono text-muted-foreground">
           <span className="size-2 rounded-full bg-[#10B981] animate-ping" />
           <span>System Operational • Living Canvas</span>

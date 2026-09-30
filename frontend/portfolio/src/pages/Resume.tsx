@@ -23,8 +23,8 @@ export const Resume: React.FC = () => {
           </p>
         </div>
 
-        <a href="../resume/resume_14_09_fullstack.pdf" target="_blank" rel="noreferrer" download>
-          <Button className="gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C] font-semibold">
+        <a href="../resume/resume_14_09_fullstack.pdf" target="_blank" rel="noreferrer" download className="w-full sm:w-auto">
+          <Button className="w-full sm:w-auto gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C] font-semibold">
             <Download className="size-4" />
             Download Resume (PDF)
           </Button>

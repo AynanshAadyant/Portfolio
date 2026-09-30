@@ -21,7 +21,7 @@ export default function App() {
         {/* Main Content Layout */}
         <div className="relative z-10 flex flex-col min-h-screen">
           <Navbar />
-          <main className="flex-grow max-w-6xl w-full mx-auto px-6">
+          <main className="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />

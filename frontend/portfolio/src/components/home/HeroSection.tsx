@@ -29,29 +29,29 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {subheadlineText}
         </p>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <Link to="/projects">
-            <Button className="gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C] font-semibold border-0 px-4 py-2 text-sm rounded-md">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          <Link to="/projects" className="w-full sm:w-auto">
+            <Button className="w-full sm:w-auto gap-2 bg-[#10B981] hover:bg-[#10B981]/90 text-[#0A0A0C] font-semibold border-0 px-4 py-2 text-sm rounded-md">
               <Terminal className="size-4" />
               Explore Systems & Architecture
               <ArrowRight className="size-4" />
             </Button>
           </Link>
 
-          <Link to="/dashboard">
+          <Link to="/dashboard" className="w-full sm:w-auto">
             <Button
               variant="outline"
-              className="gap-2 border-white/10 bg-[#121216] text-[#FAFAFA] hover:bg-white/5 hover:text-white px-4 py-2 text-sm rounded-md"
+              className="w-full sm:w-auto gap-2 border-white/10 bg-[#121216] text-[#FAFAFA] hover:bg-white/5 hover:text-white px-4 py-2 text-sm rounded-md"
             >
               <Activity className="size-4 text-[#10B981]" />
               Live Dashboard
             </Button>
           </Link>
 
-          <Link to="/resume">
+          <Link to="/resume" className="w-full sm:w-auto">
             <Button
               variant="ghost"
-              className="gap-2 text-muted-foreground hover:text-[#FAFAFA] hover:bg-white/5 px-3 py-2 text-sm rounded-md"
+              className="w-full sm:w-auto gap-2 text-muted-foreground hover:text-[#FAFAFA] hover:bg-white/5 px-3 py-2 text-sm rounded-md"
             >
               <FileText className="size-4" />
               Resume
