@@ -3,6 +3,7 @@ import authRoutes from './authRoutes.js';
 import contentRoutes from './contentRoutes.js';
 import projectRoutes from './projectRoutes.js';
 import leetcodeRoutes from './leetcodeRoutes.js';
+import githubRoutes from './githubRoutes.js';
 import spotifyRoutes from './spotifyRoutes.js';
 import adminRoutes from './adminRoutes.js';
 
@@ -12,6 +13,7 @@ router.use('/auth', authRoutes);
 router.use('/content', contentRoutes);
 router.use('/projects', projectRoutes);
 router.use('/leetcode', leetcodeRoutes);
+router.use('/github', githubRoutes );
 router.use('/spotify', spotifyRoutes);
 router.use('/admin', adminRoutes);
 

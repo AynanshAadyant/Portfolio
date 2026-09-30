@@ -22,13 +22,18 @@ export const ENV = Object.freeze({
   // LeetCode Public Username
   LEETCODE_USERNAME: process.env.LEETCODE_USERNAME || '',
 
+  // Github Public Username
+  GITHUB_USERNAME : process.env.GITHUB_USERNAME || '',
+  GITHUB_TOKEN : process.env.GITHUB_TOKEN || '',
+
   // Cache TTLs in milliseconds
   TTL: {
     LEETCODE: 60 * 60 * 1000, // 1 hour
     SPOTIFY_NOW_PLAYING: 15 * 1000, // 15 seconds
     SPOTIFY_TOP_TRACKS: 24 * 60 * 60 * 1000, // 24 hours
     CONTENT: 10 * 60 * 1000, // 10 minutes
-    PROJECTS: 10 * 60 * 1000, // 10 minutes
+    PROJECTS: 10 * 60 * 1000, // 10 minutes,
+    GITHUB : 60 * 60 * 1000
   },
 });
 

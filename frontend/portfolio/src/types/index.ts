@@ -51,3 +51,26 @@ export interface SpotifyData {
 }
 
 export type ContentBlockMap = Record<string, string>;
+
+export interface GithubCommit {
+  sha?: string;
+  message: string;
+  repo: string;
+  repoUrl?: string;
+  url?: string;
+  author?: string;
+  date?: string;
+}
+
+export interface GithubData {
+  username?: string;
+  profileUrl?: string;
+  commits: GithubCommit[];
+  activities?: {
+    message: string;
+    repo: string;
+    url?: string;
+    sha?: string;
+    date?: string;
+  }[];
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import { useContent } from '../hooks/useContent';
 import { Button } from '../components/ui/button';
 import { TechTag } from '../components/projects/TechTag';
-import { Download, Briefcase, GraduationCap, Code2, Award } from 'lucide-react';
+import { Download, Briefcase, GraduationCap, Code2, Award, ShieldCheck, Cpu } from 'lucide-react';
 
 export const Resume: React.FC = () => {
   const { data: bio } = useContent('resume.bio');
@@ -97,6 +97,37 @@ export const Resume: React.FC = () => {
           <p className="text-sm text-[#A1A1AA]">
             Coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems, Distributed Systems, Computer Networks.
           </p>
+        </div>
+      </section>
+
+      {/* Research Affiliations */}
+      <section className="mb-10">
+        <div className="flex items-center gap-2 mb-6 text-[#FAFAFA]">
+          <ShieldCheck className="size-5 text-purple-400" />
+          <h2 className="text-xl font-bold tracking-tight">Research Affiliations</h2>
+        </div>
+
+        <div className="p-6 rounded-lg border border-white/10 bg-[#121216]">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 className="text-base font-bold text-[#FAFAFA]">
+              Scientific Analysis Group (SAG), DRDO & MAIT
+            </h3>
+            <span className="text-xs font-mono text-purple-400 bg-purple-950/40 border border-purple-800/40 px-2 py-0.5 rounded">
+              Active Affiliation
+            </span>
+          </div>
+          <p className="text-sm text-[#A1A1AA] leading-relaxed mb-3">
+            Serverless IoT and embedded firmware development under Scientific Analysis Group, DRDO, coupled with Computer Science engineering foundations at Maharaja Agrasen Institute of Technology.
+          </p>
+          <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-muted-foreground pt-3 border-t border-white/5">
+            <span className="flex items-center gap-1.5 text-emerald-400">
+              <Cpu className="size-3.5" /> Embedded Systems & Cloud Telemetry
+            </span>
+            <span>•</span>
+            <span className="text-[#FAFAFA]">B.Tech in Computer Science</span>
+            <span>•</span>
+            <span className="text-cyan-400">2023 – 2027</span>
+          </div>
         </div>
       </section>
 

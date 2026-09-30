@@ -7,6 +7,7 @@ import { Projects } from './pages/Projects';
 import { ProjectDetail } from './pages/ProjectDetail';
 import { Dashboard } from './pages/Dashboard';
 import { Resume } from './pages/Resume';
+import { Socials } from './pages/Socials';
 import { AdminAuthProvider } from './context/AdminAuthContext';
 import { AdminAuthGuard } from './components/admin/AdminAuthGuard';
 
@@ -28,7 +29,7 @@ export default function App() {
               <Route path="/projects/:slug" element={<ProjectDetail />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/resume" element={<Resume />} />
-              <Route path="/socials" element={<Resume />} />
+              <Route path="/socials" element={<Socials />} />
               <Route path="/admin" element={<AdminAuthGuard />} />
               <Route path="/admin/*" element={<AdminAuthGuard />} />
               <Route path="*" element={<Home />} />

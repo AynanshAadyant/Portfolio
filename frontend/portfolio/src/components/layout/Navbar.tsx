@@ -9,6 +9,7 @@ export const Navbar: React.FC = () => {
     { name: 'Projects', path: '/projects' },
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Resume', path: '/resume' },
+    { name: 'Connect', path: '/socials' },
   ];
 
   return (
