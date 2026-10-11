@@ -1,17 +1,15 @@
 import React from 'react';
 import { useLeetCode } from '../hooks/useLeetCode';
 import { useGithub } from '../hooks/useGithub';
-import { useSpotify } from '../hooks/useSpotify';
 import { LeetCodeTile } from '../components/dashboard/LeetCodeTile';
 import { GitActivityTile } from '../components/dashboard/GitActivityTile';
-import { SpotifyTile } from '../components/dashboard/SpotifyTile';
 import { FocusTile } from '../components/dashboard/FocusTile';
 import { Activity } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
   const { data: leetCodeStats } = useLeetCode();
   const { data: githubData } = useGithub();
-  const { data: spotifyData } = useSpotify();
+  //  const { data: spotifyData } = useSpotify();
 
   return (
     <div className="py-8">
