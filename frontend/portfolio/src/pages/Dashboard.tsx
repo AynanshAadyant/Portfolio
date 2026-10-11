@@ -1,16 +1,17 @@
 import React from 'react';
 import { useLeetCode } from '../hooks/useLeetCode';
-import { useSpotify } from '../hooks/useSpotify';
 import { useGithub } from '../hooks/useGithub';
+import { useSpotify } from '../hooks/useSpotify';
 import { LeetCodeTile } from '../components/dashboard/LeetCodeTile';
-import { SpotifyTile } from '../components/dashboard/SpotifyTile';
 import { GitActivityTile } from '../components/dashboard/GitActivityTile';
+import { SpotifyTile } from '../components/dashboard/SpotifyTile';
+import { FocusTile } from '../components/dashboard/FocusTile';
 import { Activity } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
   const { data: leetCodeStats } = useLeetCode();
-  const { data: spotifyData } = useSpotify();
   const { data: githubData } = useGithub();
+  const { data: spotifyData } = useSpotify();
 
   return (
     <div className="py-8">
@@ -23,20 +24,18 @@ export const Dashboard: React.FC = () => {
           </h1>
         </div>
         <p className="text-sm text-muted-foreground max-w-2xl font-sans">
-          Real-time telemetry, algorithmic activity, current listening rotation, and GitHub CI/CD activity.
+          Real-time telemetry, algorithmic activity, current listening rotation, active focus pursuits, and GitHub CI/CD activity.
         </p>
       </div>
 
       {/* Bento Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* LeetCode Tile (spans 2 cols) */}
+        {/* Row 1: LeetCode Tile (2 cols) & Spotify Tile (1 col) */}
         {leetCodeStats && <LeetCodeTile stats={leetCodeStats} />}
 
-        {/* Spotify Tile (1 col) */}
-        {spotifyData && <SpotifyTile spotify={spotifyData} />}
-
-        {/* Git Activity Tile (spans 3 cols) */}
+        {/* Row 2: Git Activity Tile (2 cols) & Current Focus Tile (1 col) */}
         {githubData && <GitActivityTile data={githubData} />}
+        <FocusTile />
       </div>
     </div>
   );

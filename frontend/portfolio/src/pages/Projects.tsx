@@ -31,8 +31,8 @@ export const Projects: React.FC = () => {
             Engineering Projects & Systems
           </h1>
         </div>
-        <p className="text-sm text-muted-foreground max-w-2xl font-sans">
-          Production systems, distributed microservices, hardware IoT pipelines, and AI orchestrations.
+        <p className="text-sm text-muted-foreground  font-sans">
+          Full-stack engineering projects and systems I've built, showcasing my skills in software architecture, problem-solving, and implementation.
           Each case study includes architecture diagrams, problems tackled, and implementation code.
         </p>
 

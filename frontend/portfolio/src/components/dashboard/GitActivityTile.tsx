@@ -22,7 +22,7 @@ export const GitActivityTile: React.FC<GitActivityTileProps> = ({ data }) => {
         </div>
       }
       subtitle="Real-time repository commits & code activity"
-      className="col-span-1 md:col-span-3"
+      className="col-span-1 md:col-span-2"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-2">
         {commits.map((commit, idx) => {

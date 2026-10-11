@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
           </a>
           <Link
             to="/admin"
-            className="hover:text-[#10B981] transition-colors flex items-center gap-1 text-xs"
+            className="hidden md:flex hover:text-[#10B981] transition-colors items-center gap-1 text-xs"
             title="Admin CMS Portal"
           >
             <Shield className="size-3.5" />
